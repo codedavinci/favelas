@@ -960,6 +960,7 @@ function writeJson(areas) {
     for (let favela of area.data) {
       const [name, neighborhoods, complex] = favela.split(/[()]+/);
 
+      //@ts-ignore
       final.push({
         id,
         complex: complex.trim(),

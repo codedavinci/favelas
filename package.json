@@ -11,7 +11,7 @@
     "amend": "git commit --amend --no-verify --no-edit",
     "test": "jest",
     "test-watch": "yarn test --watchAll --coverage",
-    "normalize": "ts-node  scripts/normalizer.js"
+    "normalize": "ts-node  scripts/normalizer.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",

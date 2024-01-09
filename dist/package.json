@@ -1,7 +1,7 @@
 {
     "name": "favelas",
-    "version": "0.0.1",
-    "description": "A set of JavaScript utils",
+    "version": "1.0.1",
+    "description": "The most complete list of all favelas in Brazil",
     "main": "lib/es5/index.js",
     "module": "lib/es6/index.js",
     "sideEffects": false,
@@ -20,7 +20,9 @@
       "javascript",
       "utils",
       "utilities",
-      "favelas"
+      "favelas",
+      "list",
+      "array"
     ],
     "author": "Eddie Silva",
     "license": "MIT",

@@ -4,14 +4,13 @@
 
 ### USAGE
 
-```
-import Favelas from 'favelas'
+```js
+import Favelas from "favelas";
 
 // the constructor is set to default to state ='rj' (Rio de Janeiro)
-const favelas = new Favelas()
+const favelas = new Favelas();
 
-
-favelas.getAll()
+favelas.getAll();
 /**
 [
     {
@@ -24,16 +23,54 @@ favelas.getAll()
     {...}
 ]
 **/
-
 ```
 
-### Methods
+## API
 
-`getAll(): Favela[]` - Returns all favelas - full info
-`getById(favelaId: number): Favela` - Returns a favela by the favelaId
-`getByName(name: string): Favela[]` - A list of all favelas that match the name.
-`getAllNames(): string[]` - The Name of all favelas
-`getFavelasByComplex(complex: string): Favela[]` - Returns all favelas that are part of the complex matched.
-`getFavelasByZone(zone: Zone): Favela[]` - Returns all favelas by the zone.
-`getByNeighborhood(neighborhood: string): Favela[]` - Returns all favelas from the neighborhood passed.
-`total(): number` - Return the amount of favelas in that state.
+```js
+getAll(): Favela[]
+```
+
+Returns all favelas - full info
+
+```js
+getById(favelaId: number): Favela
+```
+
+Returns a favela by the favelaId
+
+```js
+getByName(name: string): Favela[]
+```
+
+A list of all favelas that match the name.
+
+```js
+getAllNames(): string[]
+```
+
+The Name of all favelas
+
+```js
+getFavelasByComplex(complex: string): Favela[]
+```
+
+Returns all favelas that are part of the complex matched.
+
+```js
+getFavelasByZone(zone: Zone): Favela[]
+```
+
+Returns all favelas by the zone.
+
+```js
+getByNeighborhood(neighborhood: string): Favela[]
+```
+
+Returns all favelas from the neighborhood passed.
+
+```js
+total(): number
+```
+
+Return the amount of favelas in that state.
