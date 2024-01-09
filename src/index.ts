@@ -1,14 +1,14 @@
+type State = "rj" | "sp";
+
+type Zone = "sul" | "oeste" | "central" | "norte" | "leste";
+
 type Favela = {
   id: number;
   name: string;
   complex: string;
-  zone: string;
+  zone: Zone;
   neighborhoods: string;
 };
-
-type State = "rj" | "sp";
-
-type Zone = "sul" | "oeste" | "central" | "norte";
 
 class Favelas {
   state: State;

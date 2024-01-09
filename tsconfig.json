@@ -4,10 +4,10 @@
       "target": "ES5",
       "lib": ["ES2020", "DOM"],
       "declaration": true,
-      "outDir": "./dist/lib/es6",
+      "outDir": "./dist/es6",
       "moduleResolution": "node",
       "resolveJsonModule": true
     },
-    "include": ["src/**/*",  "src/data/*.json", "scripts/normalizer.ts"],
+    "include": ["src/**/*",  "src/data/*.json"],
     "exclude" : ["src/**/*.spec.ts", "src/**/*.test.ts"] 
   }
