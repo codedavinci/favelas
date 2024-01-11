@@ -38,7 +38,7 @@ type Favela = {
 
 type State = "rj" | "sp";
 
-type Zone = "sul" | "oeste" | "central" | "norte";
+type Zone = "sul" | "oeste" | "central" | "norte" | "leste";
 ```
 
 ## API
@@ -53,7 +53,7 @@ Returns all favelas - full info
 getById(favelaId: number): Favela
 ```
 
-Returns a favela by the favelaId
+Returns a favela by the `favelaId``
 
 ```js
 getByName(name: string): Favela[]
@@ -65,25 +65,25 @@ A list of all favelas that match the name.
 getAllNames(): string[]
 ```
 
-The Name of all favelas
+The name of all favelas
 
 ```js
 getFavelasByComplex(complex: string): Favela[]
 ```
 
-Returns all favelas that are part of the complex matched.
+it returns all favelas that are part of the complex matched.
 
 ```js
 getFavelasByZone(zone: Zone): Favela[]
 ```
 
-Returns all favelas by the zone.
+it returns all favelas by the zone.
 
 ```js
 getByNeighborhood(neighborhood: string): Favela[]
 ```
 
-Returns all favelas from the neighborhood passed.
+it returns all favelas from the neighborhood passed.
 
 ```js
 total(): number
